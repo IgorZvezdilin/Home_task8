@@ -10,7 +10,7 @@ public class Main {
         Set<Integer> hashSet = new HashSet<>();
         Set<Integer> treeSet = new TreeSet<>();
 
-        speedTestAddInBeginningAndEndForArrayAndLinkedList(arrayList, linkedList);
+       speedTestAddInBeginningAndEndForArrayAndLinkedList(arrayList, linkedList);
         /*Добавление в конец в ArrayList происходит быстрее, чем в LinkedList, потомучто в ArrayList
          * значение добавляется в ячейку как в массиве, а в LinkedList создается нода,
          * в предыдущую ноду записывается адрес новой ноды и в только тогда в новую ноду записывается значение.

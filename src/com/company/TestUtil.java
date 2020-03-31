@@ -7,7 +7,6 @@ import java.util.Set;
 public class TestUtil {
 
     public static final int ITERATIONS_COUNT = 10000000;
-    public static final int ITERATIONS_COUNT_FOR_CONTAINS = 1000000000;
     public static final int ITERATIONS_COUNT_FOR_ADD_IN_BEGINNING = 100000;
 
     public static long testAddToCollectionInEnd(Collection<Integer> collection){
@@ -28,7 +27,7 @@ public class TestUtil {
     }
     public static long testContainsInSet(Set<Integer> collection){
         long startTime = System.currentTimeMillis();
-        for(int i = 0; i< ITERATIONS_COUNT_FOR_CONTAINS; i++){
+        for(int i = 0; i< ITERATIONS_COUNT; i++){
             collection.contains(i);
         }
         long endTime = System.currentTimeMillis();
@@ -36,7 +35,7 @@ public class TestUtil {
     }
     public static long testContainsInList(List<Integer> collection){
         long startTime = System.currentTimeMillis();
-        for(int i = 0; i< ITERATIONS_COUNT_FOR_CONTAINS; i++){
+        for(int i = 0; i< ITERATIONS_COUNT; i++){
             collection.contains(i);
         }
         long endTime = System.currentTimeMillis();
